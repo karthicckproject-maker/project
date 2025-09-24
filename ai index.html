@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL AI TOOLS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --background-color: #11010f;
+            --card-background: #f10ee6;
+            --text-color: #f7f8ef;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+            --hover-shadow-color: rgba(0, 0, 0, 0.15);
+            --border-radius: 12px;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .tool-card {
+            background-color: var(--card-background);
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 8px var(--shadow-color);
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px var(--hover-shadow-color);
+        }
+
+        .tool-card img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+        }
+
+        .tool-card h2 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>All AI Tools</h1>
+
+    <div class="tool-grid">
+        <a href="https://aistudio.google.com/prompts/new_chat" class="tool-card">
+            <img src="ai studio.png" alt="Google AI Studio Logo">
+            <h2>google.ai studio</h2>
+        </a>
+        <a href="https://notebooklm.google/" class="tool-card">
+            <img src="notebook.png" alt="NotebookLM Logo">
+            <h2>notebooklm</h2>
+        </a>
+        <a href="https://gamma.app/" class="tool-card"> <!-- Note: "gamma ai ppt" is not a valid URL -->
+            <img src="gaama ai.jpg" alt="Gamma AI Logo">
+            <h2>gamma ai</h2>
+        </a>
+        <a href="https://www.lindy.ai/" class="tool-card">
+            <img src="lindy.png" alt="Lindy AI Logo">
+            <h2>lindy ai</h2>
+        </a>
+    </div>
+</body>
+</html>
